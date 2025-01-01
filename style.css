@@ -116,7 +116,7 @@ button:hover {
 }
 .data::-webkit-scrollbar {
     background: var(--secondary); 
-    height: 8px;
+    height: 0px;
 } 
 .data::-webkit-scrollbar-thumb {
     background: var(--main); 

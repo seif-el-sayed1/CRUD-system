@@ -29,13 +29,6 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
     margin-right: auto;
 }
-
-@media (min-width:768px) {
-    .container {
-        width: 750px;
-    }
-}
-
 @media (min-width: 992px) {
     .container {
         width: 970px;
@@ -108,7 +101,7 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 14px;
+    font-size: 13px;
 }
 .data {
     width: 100%;

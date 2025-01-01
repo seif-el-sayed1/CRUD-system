@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --main: #1B263B;
+    --secondary: #0a3b7c;
+}
+body {
+    background-color: var(--main);
+    color: #fff;
+    font-family: "Cairo", serif;
+}
+body::-webkit-scrollbar {
+    background: var(--main); 
+    width: 4px;
+} 
+body::-webkit-scrollbar-thumb {
+    background: var(--secondary); 
+    border-radius: 15px;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.crud {
+    display: flex;
+    gap: 30px;
+}
+.head {
+    text-align: center;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.inputs {
+    border-right: 3px solid var(--secondary);
+    width: 50%;
+    padding-right: 20px;
+}
+input {
+    width: 99%;
+    height: 30px;
+    padding: 0px 5px; 
+    border-radius: 4px;
+    outline: none;
+    background-color: #111;
+    border: none;
+    color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+input::placeholder {
+    color: #ffffffd0;
+}
+.price input {
+    width: 49%;
+}
+#total {
+    background-color: rgb(177, 12, 12);
+    border-radius: 4px;
+    padding: 4px 5px; 
+    text-align: center;
+    width: 99%;
+}
+#total::before {
+    content: "Total: ";
+}
+button {
+    width: 100%;
+    padding: 5px 7px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    background-color: var(--secondary);
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 7px 0;
+}
+button:hover {
+    background-color: #135ec0;
+}
+.btn_search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+.data {
+    width: 100%;
+    overflow-x: scroll;
+}
+.data::-webkit-scrollbar {
+    background: var(--secondary); 
+    height: 8px;
+} 
+.data::-webkit-scrollbar-thumb {
+    background: var(--main); 
+    border-radius: 15px;
+} 
+table {
+    width: 100%;
+    text-align: center;
+    overflow-x: scroll;
+}
+th {
+    text-transform: capitalize;
+    padding: 5px;
+}
+tr,td {
+    padding: 5px;
+}
+#clearAll:hover {
+    background-color: rgb(158, 17, 17);
+}
+#update {
+    display: none;
+}
+#search {
+    display: none;
+}
+@media (max-width: 876px) {
+    .crud {
+        flex-direction: column;
+    }
+    .inputs {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid var(--secondary);
+        padding: 5px 0;
+    }
+}
